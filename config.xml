@@ -13,11 +13,15 @@
         PhoneGap Team , anvendt af Lone Osterlund
     </author>
 	
-	<content src="hovedregning.html" />
     <content src="index.html" />
 
     
 	<preference name="DisallowOverscroll" value="true" />
+	
+	
+	  <preference name="fullscreen" value="false" />
+	  <preference name="webviewbounce" value="true" />
+	  <plugin name="cordova-plugin-bluetooth-serial" />
   	
     <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1" />
     <plugin name="cordova-plugin-camera" source="npm" spec="~2.1.1" />
