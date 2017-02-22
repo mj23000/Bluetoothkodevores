@@ -22,7 +22,7 @@ function onConnect() {
  * Data vises i "fraArduino"	
  */
 function onMessage(data) {
-    document.getElementById("fraArduino").innerHTML =""+ data" centimeter";       
+    document.getElementById("fraArduino").innerHTML =""+ data + " centimeter";       
 }
 
 /*
