@@ -19,10 +19,10 @@ function onConnect() {
 }
 
 /*
- * Data vises i "fraArduino"
+ * Data vises i "fraArduino"	
  */
 function onMessage(data) {
-    document.getElementById("fraArduino").innerHTML =""+ data;       
+    document.getElementById("fraArduino").innerHTML =""+ data" centimeter";       
 }
 
 /*
@@ -43,4 +43,14 @@ function onDisconnect() {
 function subscribeFailed() {
         alert("subscribe failed");
 }
+
+
+
+
+
+
+
+
+
+
 	
