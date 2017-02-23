@@ -29,7 +29,6 @@ https://github.com/don/BluetoothSerial
 		<button type="button"  ontouchstart = "sendToArduino('n')"> Sluk lys </button></br></br>
 		<button type="button"  ontouchstart = "sendToArduino('b')"> Dyt dyt </button></br></br>
 		<script>
-		
 			document.getElementById("knapFrem").addEventListener("touchstart",sendToArduino('f'),false);
 			document.getElementById("knapVenstre").addEventListener("touchstart",sendToArduino('v'),false);
 			document.getElementById("knapHoejre").addEventListener("touchstart",sendToArduino('h'),false);
@@ -43,11 +42,6 @@ https://github.com/don/BluetoothSerial
 			document.getElementById("knapVenstreTilbage").addEventListener("touchend",sendToArduino('s'),false);
 			document.getElementById("knapHoejreTilbage").addEventListener("touchend",sendToArduino('s'),false);
 			document.getElementById("knapTilbage").addEventListener("touchend",sendToArduino('s'),false);
-			
-			
-		function sendToArduino(data) {
-			bluetoothSerial.write(data);
-}
 		</script>
     </body>
 </html>
