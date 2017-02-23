@@ -23,18 +23,27 @@ https://github.com/don/BluetoothSerial
 		<button id="knapVenstre"> Venstre </button> &nbsp; <button id="knapHoejre"> Hoejre </button> </br></br>
 		<button id="knapVenstreTilbage"> Venstre tilbage </button> &nbsp; <button id="knapHoejreTilbage"> Hoejre tilbage </button>	</br></br>
 		<button id="knapTilbage"> Tilbage </button>	</br></br>
-		<button type="button"  onclick = "sendToArduino('s')"> Stop </button></br></br></br></br>
-		<button type="button"  onclick = "sendToArduino('a')"> Bak vaek </button></br></br></br></br>
-		<button type="button"  onclick = "sendToArduino('l')"> Taend lys </button></br></br>
-		<button type="button"  onclick = "sendToArduino('n')"> Sluk lys </button></br></br>
-		<button type="button"  onclick = "sendToArduino('b')"> Dyt dyt </button></br></br>
+		<button type="button"  ontouchstart = "sendToArduino('s')"> Stop </button></br></br></br></br>
+		<button type="button"  ontouchstart = "sendToArduino('a')"> Bak vaek </button></br></br></br></br>
+		<button type="button"  ontouchstart = "sendToArduino('l')"> Taend lys </button></br></br>
+		<button type="button"  ontouchstart = "sendToArduino('n')"> Sluk lys </button></br></br>
+		<button type="button"  ontouchstart = "sendToArduino('b')"> Dyt dyt </button></br></br>
 		<script>
-			document.getElementById("knapFrem").addEventListener("click",sendToArduino('f'));
-			document.getElementById("knapVenstre").addEventListener("click",sendToArduino('v'));
-			document.getElementById("knapHoejre").addEventListener("click",sendToArduino('h'));
-			document.getElementById("knapVenstreTilbage").addEventListener("click",sendToArduino('d'));
-			document.getElementById("knapHoejreTilbage").addEventListener("click",sendToArduino('k'));
-			document.getElementById("knapTilbage").addEventListener("click",sendToArduino('t'));
+		
+			document.getElementById("knapFrem").addEventListener("touchstart",sendToArduino('f'),false);
+			document.getElementById("knapVenstre").addEventListener("touchstart",sendToArduino('v'),false);
+			document.getElementById("knapHoejre").addEventListener("touchstart",sendToArduino('h'),false);
+			document.getElementById("knapVenstreTilbage").addEventListener("touchstart",sendToArduino('d'),false);
+			document.getElementById("knapHoejreTilbage").addEventListener("touchstart",sendToArduino('k'),false);
+			document.getElementById("knapTilbage").addEventListener("touchstart",sendToArduino('t'),false);
+			
+			document.getElementById("knapFrem").addEventListener("touchend",sendToArduino('s'),false);
+			document.getElementById("knapVenstre").addEventListener("touchend",sendToArduino('s'),false);
+			document.getElementById("knapHoejre").addEventListener("touchend",sendToArduino('s'),false);
+			document.getElementById("knapVenstreTilbage").addEventListener("touchend",sendToArduino('s'),false);
+			document.getElementById("knapHoejreTilbage").addEventListener("touchend",sendToArduino('s'),false);
+			document.getElementById("knapTilbage").addEventListener("touchend",sendToArduino('s'),false);
+			
 			
 		function sendToArduino(data) {
 			bluetoothSerial.write(data);
