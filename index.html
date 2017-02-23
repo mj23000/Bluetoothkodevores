@@ -35,6 +35,10 @@ https://github.com/don/BluetoothSerial
 			document.getElementById("knapVenstreTilbage").addEventListener(sendToArduino('d'));
 			document.getElementById("knapHoejreTilbage").addEventListener(sendToArduino('k'));
 			document.getElementById("knapTilbage").addEventListener(sendToArduino('t'));
+			
+		function sendToArduino(data) {
+			bluetoothSerial.write(data);
+}
 		</script>
     </body>
 </html>
