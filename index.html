@@ -29,12 +29,12 @@ https://github.com/don/BluetoothSerial
 		<button type="button"  onclick = "sendToArduino('n')"> Sluk lys </button></br></br>
 		<button type="button"  onclick = "sendToArduino('b')"> Dyt dyt </button></br></br>
 		<script>
-			document.getElementById("knapFrem").addEventListener(sendToArduino('f'));
-			document.getElementById("knapVenstre").addEventListener(sendToArduino('v'));
-			document.getElementById("knapHoejre").addEventListener(sendToArduino('h'));
-			document.getElementById("knapVenstreTilbage").addEventListener(sendToArduino('d'));
-			document.getElementById("knapHoejreTilbage").addEventListener(sendToArduino('k'));
-			document.getElementById("knapTilbage").addEventListener(sendToArduino('t'));
+			document.getElementById("knapFrem").addEventListener("click",sendToArduino('f'));
+			document.getElementById("knapVenstre").addEventListener("click",sendToArduino('v'));
+			document.getElementById("knapHoejre").addEventListener("click",sendToArduino('h'));
+			document.getElementById("knapVenstreTilbage").addEventListener("click",sendToArduino('d'));
+			document.getElementById("knapHoejreTilbage").addEventListener("click",sendToArduino('k'));
+			document.getElementById("knapTilbage").addEventListener("click",sendToArduino('t'));
 			
 		function sendToArduino(data) {
 			bluetoothSerial.write(data);
