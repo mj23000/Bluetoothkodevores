@@ -1,0 +1,17 @@
+
+#background{
+	background-color:SteelBlue;  
+	text-align:center;
+	font-family:Courier New;
+	font-size:150%;
+	display: block;
+}
+
+h1{
+	color:Snow;
+}
+
+body{
+	margin:0;
+	background-color:SteelBlue; 
+}
