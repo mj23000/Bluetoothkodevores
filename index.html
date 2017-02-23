@@ -19,14 +19,27 @@ https://github.com/don/BluetoothSerial
         <div id="statusDiv"></div>
 		</br>
 		</br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button"  onmousedown = "sendToArduino('f')"> Frem </button></br></br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button"  onmousedown = "sendToArduino('v')"> Venstre </button> &nbsp; <button type="button"  onmousedown = "sendToArduino('h')"> Hoejre </button></br></br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button"  onmousedown = "sendToArduino('d')"> Venstre tilbage </button> &nbsp; <button type="button"  onmousedown = "sendToArduino('k')"> Hoejre tilbage </button></br></br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button"  onmousedown = "sendToArduino('t')"> Tilbage </button></br></br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button"  onmousedown = "sendToArduino('s')"> Stop </button></br></br></br></br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button"  onclick = "sendToArduino('a')"> Bak vaek </button></br></br></br></br>
+		<button id="knapFrem"> Frem </button></br></br>
+		<button id="knapVenstre"> Venstre </button> &nbsp; <button id="knapHoejre"> Hoejre </button> </br></br>
+		<button id="knapVenstreTilbage"> Venstre tilbage </button> &nbsp; <button id="knapHoejreTilbage"> Hoejre tilbage </button>	</br></br>
+		<button id="knapTilbage"> Tilbage </button>	</br></br>
+		<button type="button"  onclick = "sendToArduino('s')"> Stop </button></br></br></br></br>
+		<button type="button"  onclick = "sendToArduino('a')"> Bak vaek </button></br></br></br></br>
 		<button type="button"  onclick = "sendToArduino('l')"> Taend lys </button></br></br>
 		<button type="button"  onclick = "sendToArduino('n')"> Sluk lys </button></br></br>
 		<button type="button"  onclick = "sendToArduino('b')"> Dyt dyt </button></br></br>
+		<script>
+		document.getElementById("knapFrem").addEventListener("sendToArduino('f')");
+		document.getElementById("knapVenstre").addEventListener("sendToArduino('v')");
+		document.getElementById("knapHoejre").addEventListener("sendToArduino('h')");
+		document.getElementById("knapVenstreTilbage").addEventListener("sendToArduino('d')");
+		document.getElementById("knapHoejreTilbage").addEventListener("sendToArduino('k')");
+		document.getElementById("knapTilbage").addEventListener("sendToArduino('t')");
+		document.getElementById("kna").addEventListener("sendToArduino('f')");
+		
+		
+		
+		
+		
     </body>
 </html>
