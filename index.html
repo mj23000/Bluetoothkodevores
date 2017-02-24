@@ -15,11 +15,12 @@ https://github.com/don/BluetoothSerial
 				background-color:SteelBlue;  
 				text-align:center;
 				font-family:Courier New;
-				font-size:150%;
+				font-size:100%;
 				display: block;
 			}
-			h1{
+			article{
 				color:Snow;
+				font-size:175%;
 			}
 			body{
 				margin:0;
@@ -31,14 +32,15 @@ https://github.com/don/BluetoothSerial
     </head>
     <body onload="onLoad()">
 	<div id="background">
-        <h1>Fræk lille controller </h1>
+        <article>Fræk lille controller </article>
+		</br>
         <div id="fraArduino"></div>
         <div id="statusDiv"></div>
 		<button type="button" ontouchstart = "sendToArduino('f')" ontouchend = "sendToArduino('s')"> <img src="Button frem.png"> </button> </br></br>
 		<button type="button" ontouchstart = "sendToArduino('v')" ontouchend = "sendToArduino('s')"> <img src="Button venstre.png"> </button> 
 		<button type="button" ontouchstart = "sendToArduino('h')" ontouchend = "sendToArduino('s')"> <img src="Button hoejre.png"> </button></br></br>
-		<button type="button" ontouchstart = "sendToArduino('v')" ontouchend = "sendToArduino('s')"> <img src="Button venstre skarp.png"> </button> 
-		<button type="button" ontouchstart = "sendToArduino('h')" ontouchend = "sendToArduino('s')"> <img src="Button hoejre skarp.png"> </button></br></br>
+		<button type="button" ontouchstart = "sendToArduino('y')" ontouchend = "sendToArduino('s')"> <img src="Button venstre skarp.png"> </button> 
+		<button type="button" ontouchstart = "sendToArduino('x')" ontouchend = "sendToArduino('s')"> <img src="Button hoejre skarp.png"> </button></br></br>
 		<button type="button" ontouchstart = "sendToArduino('d')" ontouchend = "sendToArduino('s')"> <img src="Button venstre tilbage.png"> </button> 
 		<button type="button" ontouchstart = "sendToArduino('k')" ontouchend = "sendToArduino('s')"> <img src="Button hoejre tilbage.png"> </button></br></br>
 		<button type="button" ontouchstart = "sendToArduino('t')" ontouchend = "sendToArduino('s')"> <img src="Button tilbage.png"> </button></br></br>
