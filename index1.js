@@ -30,6 +30,7 @@ function onMessage(data) {
  * ArrayBuffer, string, array of integers, or a Uint8Array.
  * I dette eksempel sendes en streng 
  */
+ 
 function sendToArduino(data) {
         bluetoothSerial.write(data);
 }
